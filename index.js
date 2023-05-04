@@ -44,6 +44,9 @@ app.use((err, req, res, next) => {
     stack: err.stack,
   });
 });
+app.get('/',(req,res)=>{
+    res.send('Welcome To Hall Booking App');
+}) 
 
 app.listen(6000, () => {
   connect();
